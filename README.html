@@ -1,0 +1,42 @@
+<head>
+</head>
+<body>
+<h1 style="border-bottom:1px solid #ddd; border-bottom-width:1px; border-bottom-style:solid;border-bottom-color: rgb(221,221,221);"> Price Intelligently</h1>
+<h2>Tenets</h2>
+	<ol>
+		<li>1. Dashtastic will offer immediate value, free of charge, to any SaaS Stripe Customer</li>
+		<li>2. Dashtastic will provide users with a delightful experience that is beautiful and naturally shareable</li>
+		<li>3. Dashtastic will offer enough features and value that the resource could reasonably used through a leadership team on a consisten basis</li>
+	</ol>
+<h2>Version 1.0</h2>
+	<ul>
+		<li>Active customer count (no deltas)</li>
+		<li>Current monthly recurring revenue (no deltas)</li>
+		<li>Gross new MRR last 30 days (cumulative)</li>
+		<li>New customers this month</li>
+		<li>Churned customers this month, including % of total</li>
+		<li>Churned recurring revenue this month, including % of total</li>
+		<li>Last five recently churned customers (a list - datetime churned, gravatar image and email address )</li>
+		<li>Quantity - average quantity of “seats” for recurring plans … probably want to include the max and min quantity as well. “Average team size” is very important to us.</li>
+		<li>Last five new customers (same kind of list as recently-churned)</li>
+		<li>Everything should be logically linked to corresponding resource in Stripe (eg. customer count metric should be an <a> element linked to manage.stripe.com/customers)</li>
+		<li>Daily/weekly email with top-level metrics</li>
+		<li>Ability to subscribe others to metrics email</li>
+		<li>For the email, here is an email i have for a product i made that i really enjoy getting: https://www.evernote.com/shard/s4/sh/7164ffc1-d2e8-4b36-a4f9-1364bc946114/5fb557bfe27d0bfc2977a0cc675ea009 maybe useful for some inspiration, maybe not</li>
+		<li>Discount rate</li>
+	</ul>
+<h2>Milestone: Press Launch</h2>
+	<ul>
+		<li>Delta stats for all top-level metrics: customer count, churn (mrr %)</li>
+		<li>Trial info - # of customers in trials, trial conversion rate last 7 days, 30 days, 90 days</li>
+		<li>Top-level metrics broken down by Stripe “Plan”</li>
+		<li>Show images of people in each plan (gravatar) and link them to the customer object in Stripe</li>
+		<li>Activity stream, pulling from the event log in the Stripe API</li>
+	</ul>
+<h2>Other Long Term Ideas (don't do now)</h2>
+	<ul>
+		<li>ANYthing with data processing, bucketing, group discovery, AI/ML</li>
+		<li>Google Analytics integration - we can show key pages and events from GA in the dashboard as well, and we have a proof of concept of how to add more events to customers’ GA accounts by adding javascript mixins we provide.</li>
+		<li>ANY other payment providers - let’s hold off on that indefinitely until there is a massive unignorable reason to add Recurly etc.</li>
+		<li>Ability to email targeted surveys (our relative value and pricing campaigns, but maybe expand to NPS) and break this data down by cohort. </li>
+</body>
